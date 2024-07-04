@@ -3,76 +3,67 @@
     border: 1px solid #000;
     background-color: #A2A99F;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 100%; 
-    max-width: 300px; 
-    height: auto; 
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     flex-shrink: 0;
 }
 
-
 header {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
     text-align: center;
 }
 
 .ofrecemos {
     color: #000;
-    font-family: Inter;
-    font-size: 18px; 
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
     font-weight: 700;
     line-height: normal;
     background-color: #A2A99F;
-    padding: 20px; 
-    margin: 20px; 
+    padding: 20px;
+    margin: 20px;
 }
 
 .contenedoropciones {
-    font-size: 16px; 
+    font-size: 16px;
     background-color: rgb(201, 233, 211);
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .boton {
     border-radius: 30px;
     background: #FFF;
-    width: 200px; 
-    height: 50px; 
+    width: 200px;
+    height: 50px;
     flex-shrink: 0;
     margin: 10px;
 }
 
 .textoboton {
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 .titulo1 {
     color: #000;
-    font-family: Inter;
-    font-size: 48px; 
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
     font-weight: 700;
-    line-height: normal;
-    background-color:#84967A;
+    background-color: #84967A;
     text-align: center;
-    width: 100%; 
-    padding: 20px 0; 
+    width: 100%;
+    padding: 20px 0;
 }
 
-.titulo2{
-    font-size: 1.2rem; 
-    margin-top: 10px; 
-    color: #000; 
-    font-family: Inter, sans-serif; 
-    font-style: normal; 
-    font-weight: 700; 
-    line-height: normal; 
-    margin: 0; 
+.titulo2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -80,15 +71,11 @@ header {
         font-size: 16px;
     }
 
-    .contenedoropciones {
-        font-size: 14px;
-    }
-
     .textoboton {
         font-size: 14px;
     }
 
-    .titulo {
+    .titulo1 {
         font-size: 36px;
     }
 }
@@ -98,78 +85,55 @@ header {
         font-size: 14px;
     }
 
-    .contenedoropciones {
-        font-size: 12px;
-    }
-
     .textoboton {
         font-size: 12px;
     }
 
-    .titulo {
+    .titulo1 {
         font-size: 24px;
     }
 }
 
-.nuestra{
+.nuestra,
+.servicios,
+.contactos1 {
     border-radius: 48px;
-background: #A2A99F;
-color: #000;
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-.servicios{
-    border-radius: 47px;
-background: #A2A99F;
-color: #000;
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    background: #A2A99F;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px;
 }
 
 .contenedor-imagen {
     display: flex;
-    justify-content: center; 
-    gap: 40px; 
-    margin-top: 20px; 
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
 }
 
 .contenedor-imagen > div {
-    text-align: center; 
+    text-align: center;
 }
 
 .titulo-imagen {
-    font-size: 18px; 
-    margin-top: 10px; 
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .portafolios1,
 .portafolios2 {
-    border-radius: 20px; 
-    width: 300px; 
-    height: auto; 
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    background-color: #E0E0E0;
+    padding: 10px;
 }
-
-.contactos1{
-    border-radius: 85px;
-background: #A2A99F;
-color: #000;
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
 
 .subtitulo {
-    margin-top: 20px; /* Espacio entre el título y el subtitulo */
+    margin-top: 20px;
 }
 
 .contactocaja {
@@ -177,16 +141,13 @@ line-height: normal;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%; /* Ancho del cuadro */
-    margin: 0 auto; /* Centra el cuadro horizontalmente */
-    border: 2px solid #000; /* Borde del cuadro */
-    padding: 20px; /* Espaciado interno del cuadro */
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #000;
+    padding: 20px;
 }
 
-.contactos2{
-    margin-bottom: 10px; 
-}
-
-.contactos1 {
-    margin-bottom: 10px; 
+.contactos1,
+.contactos2 {
+    margin-bottom: 10px;
 }
