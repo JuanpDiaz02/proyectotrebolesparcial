@@ -3,39 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Trevoles</title>
+    <title>Los Treboles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
+    <style>
+        .contenedor-imagen .imagen-contenedor {
+            background-color: #f8f9fa; 
+            padding: 10px; 
+            border-radius: 8px; 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); 
+        }
+        .portafolios {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover; 
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1 class="titulo1">Los Treboles.</h1>
-        <div class="contenedor-imagen">
-            <div>
-                <img src="img/Portafolio1.jpeg" alt="portafolio 1" class="portafolios1"/>
-                <h3 class="titulo-imagen">Evento en el que armamos el escenario para Luis Miguel en el Movistar Arena.</h3>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Los Treboles</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mision.html">Nuestra Misión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portafolios.html">Portafolios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <img src="img/Portafolio2.jpeg" alt="Portafolio 2" class="portafolios2" />
-                <h4 class="titulo-imagen">Escenario armado en Movistar Arena.</h4>
+        </nav>
+        <div class="container text-center py-5">
+            <h1 class="titulo1">Los Treboles</h1>
+        </div>
+        <div class="container contenedor-imagen text-center my-3">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="imagen-contenedor">
+                        <img src="img/Portafolio1.jpeg" alt="portafolio 1" class="portafolios img-fluid rounded" />
+                        <h3 class="titulo-imagen mt-2">Evento en el que armamos el escenario para Luis Miguel en el Movistar Arena.</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="imagen-contenedor">
+                        <img src="img/Portafolio2.jpeg" alt="Portafolio 2" class="portafolios img-fluid rounded" />
+                        <h4 class="titulo-imagen mt-2">Escenario armado en Movistar Arena.</h4>
+                    </div>
+                </div>
             </div>
         </div>
-        <nav>
-            <ul>
-                <div class="contenedoropciones">
-                    <li class="boton"><a href="index.html" class="textoboton">Inicio</a></li>
-                    <li class="boton"><a href="mision.html" class="textoboton">Nuestra Mision</a></li>
-                    <li class="boton"><a href="servicios.html" class="textoboton">Servicios</a></li>
-                    <li class="boton"><a href="portafolios.html" class="textoboton">Portafolios</a></li>
-                    <li class="boton"><a href="contacto.html" class="textoboton">Contacto</a></li>
-                </div>
-            </ul>
-        </nav>
     </header>
-    <main>
-     
+    
+    <main class="container mt-4">
     </main>
-    <footer>
-
+    
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Los Treboles. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
